@@ -1,4 +1,9 @@
-import { LightningElement } from 'lwc';
+import { LightningElement, wire } from 'lwc';
+import {
+    MessageContext,
+    publish
+} from 'lightning/messageService';
+import pageSwitch from '@salesforce/messageChannel/PageSwitchMessageChannel__c';
 
 export default class PersonProfileMenu extends LightningElement {
     homeButtonStyle = 'slds-button slds-button_dual-stateful slds-button_outline-brand';
@@ -6,8 +11,10 @@ export default class PersonProfileMenu extends LightningElement {
     servicesButtonStyle = 'slds-button slds-button_dual-stateful slds-button_outline-brand';
     testimonyButtonStyle = 'slds-button slds-button_dual-stateful slds-button_outline-brand';
 
+    @wire(MessageContext)
+    messageContext;
+
     handleClick(event) {
-        console.log('Event: ', event.target.name);
         switch(event.target.name) {
             case 'home':
                 this.homeButtonStyle = 'slds-button slds-button_outline-brand slds-button_dual-stateful slds-is-pressed';
@@ -34,5 +41,9 @@ export default class PersonProfileMenu extends LightningElement {
                 this.testimonyButtonStyle = 'slds-button slds-button_dual-stateful slds-button_outline-brand slds-is-pressed';
                 break;
         }
+
+        const payload = {pageSelect: event.target.name};
+
+        publish(this.messageContext, pageSwitch, payload);
     }
 }
