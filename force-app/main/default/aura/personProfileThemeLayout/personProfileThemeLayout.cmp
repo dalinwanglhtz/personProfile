@@ -9,6 +9,6 @@
             <div class="slds-col slds-size_4-of-6">
                 {!v.mainTextArea}
             </div>
-        </div>
+        </div> 
     </div>
 </aura:component>	
