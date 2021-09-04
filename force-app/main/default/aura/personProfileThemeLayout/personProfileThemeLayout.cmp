@@ -3,10 +3,10 @@
     <aura:attribute name="mainTextArea" type="Aura.Component[]" required="false"/>
     <div>
         <div class="slds-grid">
-            <div class="slds-col slds-size_2-of-6">
+            <div class="slds-col slds-size_1-of-6">
                 {!v.sidePane}
             </div>
-            <div class="slds-col slds-size_4-of-6">
+            <div class="slds-col slds-size_5-of-6">
                 {!v.mainTextArea}
             </div>
         </div>
