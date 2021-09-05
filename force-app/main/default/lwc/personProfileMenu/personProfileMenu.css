@@ -1,5 +1,5 @@
 .button {
-    background-color: #4CAF50; /* Green */
+    background-color: #555555;
     border: none;
     color: white;
     padding: 15px 32px;
@@ -12,12 +12,10 @@
     cursor: pointer;
   }
 
-  .button2 {background-color: #555555;}
-
   .button:hover {
       background-image: linear-gradient(rgba(0, 0, 0, 0.4) 0 0);
   }
 
-  .button:focus {
+  .button:active {
       background-color:black;
   }
