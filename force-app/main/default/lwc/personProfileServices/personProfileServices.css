@@ -1,0 +1,25 @@
+hr {
+    border: none;
+    border-top: 3px double #333;
+    color: #333;
+    overflow: visible;
+    text-align: left;
+    height: 5px;
+}
+
+hr:after {
+    background: #808080;
+    padding: 0 4px;
+    position: relative;
+    top: -13px;
+}
+
+.hr1:after {
+    content: 'Residential Home Loan';
+    font-size: large;
+}
+
+.hr2:after {
+    content: 'Commercial Loan';
+    font-size: large;
+}
