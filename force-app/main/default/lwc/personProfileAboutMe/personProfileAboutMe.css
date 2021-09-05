@@ -9,8 +9,22 @@ hr {
 
 hr:after {
     background: #808080;
-    content: 'Education';
     padding: 0 4px;
     position: relative;
     top: -13px;
+}
+
+.hr1:after {
+    content: 'Education';
+    font-size: large;
+}
+
+.hr2:after {
+    content: 'Career';
+    font-size: large;
+}
+
+.hr3:after {
+    content: 'Certification & Awards';
+    font-size: large;
 }
