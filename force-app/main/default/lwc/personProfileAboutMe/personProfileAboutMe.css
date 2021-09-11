@@ -35,3 +35,7 @@ img {
     border-radius: 50%;
     border: 3px solid wheat;
 }
+
+.content {
+    background-color: silver;
+}
