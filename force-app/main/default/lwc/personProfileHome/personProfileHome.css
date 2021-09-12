@@ -25,3 +25,7 @@ img {
 .content {
     background-color: silver;
 }
+
+p {
+    text-indent: 30px;
+}
