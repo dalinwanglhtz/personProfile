@@ -31,8 +31,15 @@ img {
     border: 3px solid wheat;
 }
 
-.content {
-    background-color: silver;
+.quote {
+    margin: 0;
+    background: #eee;
+    padding: 1em;
+    border-radius: 1em;
     font-family: cursive;
     font-size:small;
+}
+.quote figcaption,
+.quote blockquote {
+margin: 1em;
 }
