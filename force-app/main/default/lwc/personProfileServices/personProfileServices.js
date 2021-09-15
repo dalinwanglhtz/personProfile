@@ -11,6 +11,14 @@ export default class PersonProfileServices extends LightningElement {
         {
             Id: 2,
             src: PersonProfileResources + '/lenders/westpac.png'
+        },
+        {
+            Id: 3,
+            src: PersonProfileResources + '/lenders/anz.png'
+        },
+        {
+            Id: 4,
+            src: PersonProfileResources + '/lenders/nab.png'
         }
     ];
 }
