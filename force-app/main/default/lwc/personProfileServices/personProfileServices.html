@@ -9,10 +9,13 @@
         </div>
         <div class="slds-col slds-size_2-of-2">
             <hr class="hr3">
-            <template for:each={lenderPics} for:item="lenderPic">
-                <img key={lenderPic.Id} src={lenderPic.src} class="lendersImg">
-                &nbsp;&nbsp;
-            </template>
+            <div class="slds-grid slds-wrap">
+                <template for:each={lenderPics} for:item="lenderPic">
+                    <div key={lenderPic.Id} class="slds-col slds-size_1-of-6 slds-var-m-bottom_small">
+                        <img src={lenderPic.src} class="lendersImg">
+                    </div>
+                </template>
+            </div>
         </div>
     </div>
 </template>

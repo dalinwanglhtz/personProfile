@@ -35,6 +35,26 @@ export default class PersonProfileServices extends LightningElement {
         {
             Id: 8,
             src: PersonProfileResources + '/lenders/boq.png'
+        },
+        {
+            Id: 9,
+            src: PersonProfileResources + '/lenders/bendigo-bank.png'
+        },
+        {
+            Id: 10,
+            src: PersonProfileResources + '/lenders/resimac.png'
+        },
+        {
+            Id: 11,
+            src: PersonProfileResources + '/lenders/bluestone.png'
+        },
+        {
+            Id: 12,
+            src: PersonProfileResources + '/lenders/latrobe-financial.png'
+        },
+        {
+            Id: 13,
+            src: PersonProfileResources + '/lenders/liberty-financial.png'
         }
     ];
 }
