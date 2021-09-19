@@ -13,6 +13,7 @@ export default class PersonProfileCanvas extends LightningElement {
     isAboutMe;
     isServices;
     isTestimony;
+    isContactMe;
 
     @wire(MessageContext)
     messageContext;
@@ -42,20 +43,23 @@ export default class PersonProfileCanvas extends LightningElement {
         switch(message.pageSelect) {
             case 'home':
                 this.isHome = true;
-                this.isAboutMe = this.isServices = this.isTestimony = false;
+                this.isAboutMe = this.isServices = this.isTestimony = this.isContactMe = false;
                 break;
             case 'aboutme':
                 this.isAboutMe = true;
-                this.isHome = this.isServices = this.isTestimony = false;
+                this.isHome = this.isServices = this.isTestimony = this.isContactMe = false;
                 break;
             case 'services':
                 this.isServices = true;
-                this.isHome = this.isAboutMe = this.isTestimony = false;
+                this.isHome = this.isAboutMe = this.isTestimony = this.isContactMe = false;
                 break;
             case 'testimony':
                 this.isTestimony = true;
-                this.isHome = this.isAboutMe = this.isServices = false;
+                this.isHome = this.isAboutMe = this.isServices = this.isContactMe = false;
                 break;
+            case 'contactme':
+                this.isContactMe = true;
+                this.isHome = this.isAboutMe = this.isServices = this.isTestimony = false;
         }
     }
 }
