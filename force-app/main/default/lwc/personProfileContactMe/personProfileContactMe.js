@@ -3,4 +3,7 @@ import PersonProfileResources from '@salesforce/resourceUrl/personProfileResourc
 
 export default class PersonProfileContactMe extends LightningElement {
     maggiePic = PersonProfileResources + '/maggiePic.jpg';
+    wechatPic = PersonProfileResources + '/wechat.svg';
+    emailPic = PersonProfileResources + '/email.png';
+    phonePic = PersonProfileResources + '/phone.png';
 }
