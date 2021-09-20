@@ -15,16 +15,11 @@ hr:after {
 }
 
 .hr1:after {
-    content: 'Residential Home Loan';
+    content: 'Loan Types';
     font-size: large;
 }
 
-.hr2:after {
-    content: 'Commercial Loan';
-    font-size: large;
-}
-
-.hr3::after {
+.hr2::after {
     content: 'Lenders';
     font-size: large;
 }
@@ -39,4 +34,10 @@ hr:after {
 .lendersImg {
     width: 120px;
     height: 60px;
+}
+
+.content {
+    background-color: #eee;
+    font-family: cursive; 
+    font-size:small;
 }

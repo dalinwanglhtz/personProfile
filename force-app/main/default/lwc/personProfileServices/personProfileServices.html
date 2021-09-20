@@ -2,16 +2,24 @@
     <div class="slds-grid slds-wrap slds-gutters">
         <div class="slds-col slds-size_1-of-2">
             <hr class="hr1">
-            <hr class="hr2">
+            <div>
+                <ul class="slds-has-dividers_around-space">
+                    <template for:each={loanTypes} for:item="loanItem">
+                        <li class="slds-item content" key={loanItem.Id}>
+                            {loanItem.typeName}
+                        </li>
+                    </template>
+                </ul>
+            </div>
         </div>
         <div class="slds-col slds-size_1-of-2">
             <img class="maggieImg" src={maggiePic}>
         </div>
         <div class="slds-col slds-size_2-of-2">
-            <hr class="hr3">
+            <hr class="hr2">
             <div class="slds-grid slds-wrap">
                 <template for:each={lenderPics} for:item="lenderPic">
-                    <div key={lenderPic.Id} class="slds-col slds-size_1-of-6 slds-var-m-bottom_small">
+                    <div key={lenderPic.Id} class="slds-col slds-size_1-of-7 slds-var-m-bottom_small">
                         <img src={lenderPic.src} class="lendersImg">
                     </div>
                 </template>

@@ -3,6 +3,40 @@ import PersonProfileResources from '@salesforce/resourceUrl/personProfileResourc
 
 export default class PersonProfileServices extends LightningElement {
     maggiePic = PersonProfileResources + '/maggiePic.jpg';
+    loanTypes = [
+        {
+            Id: 1,
+            typeName: 'First Home Buyer'
+        },
+        {
+            Id: 2,
+            typeName: 'Refinancing Home Loans'
+        },
+        {
+            Id: 3,
+            typeName: 'Investment Loans'
+        },
+        {
+            Id: 4,
+            typeName: 'Equipment Finance'
+        },
+        {
+            Id: 5,
+            typeName: 'Small to Medium (SME) Business Loans'
+        },
+        {
+            Id: 6,
+            typeName: 'Commercial Loans'
+        },
+        {
+            Id: 7,
+            typeName: 'Property Development Loans'
+        },
+        {
+            Id: 8,
+            typeName: 'Self Managed Super Fund (SMSF) Loans'
+        }
+    ]
     lenderPics = [
         {
             Id: 1,
