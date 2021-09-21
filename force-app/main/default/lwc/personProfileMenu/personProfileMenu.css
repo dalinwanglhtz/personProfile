@@ -19,3 +19,28 @@
   .button:active {
       background-color:black;
   }
+
+.fix1 {
+    top: 4rem;
+    left: 20rem;
+}
+
+.fix2 {
+    top: 30rem;
+    left: 20rem;
+}
+
+.fix3 {
+    top: 56rem;
+    left: 20rem;
+}
+
+.fix4 {
+    top: 82rem;
+    left: 20rem;
+}
+
+.fix5 {
+    top: 108rem;
+    left: 20rem;
+}
