@@ -6,7 +6,12 @@
                 <ul class="slds-has-dividers_around-space">
                     <template for:each={loanTypes} for:item="loanItem">
                         <li class="slds-item content" key={loanItem.Id}>
-                            {loanItem.typeName}
+                            <details>
+                                <summary>{loanItem.typeName}</summary>
+                                <ul>
+                                    <li>testing now</li>
+                                </ul>
+                            </details>
                         </li>
                     </template>
                 </ul>

@@ -41,3 +41,28 @@ hr:after {
     font-family: cursive; 
     font-size:small;
 }
+
+details > summary {
+    padding: 4px;
+    background-color: #eeeeee;
+    cursor: pointer;
+}
+
+details > summary::after {
+    background: silver;
+    border-color: #333;
+    border-radius: 15px;
+    content: "+";
+    color: #333;
+    float: left;
+    font-size: 1em;
+    font-weight: bold;
+    margin: -2px 10px 0 0;
+    padding: 1px 0 3px 0;
+    text-align: center;
+    width: 30px;
+}
+
+details[open] > summary::after {
+    content: '-';
+}
