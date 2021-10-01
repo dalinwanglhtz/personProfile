@@ -66,3 +66,27 @@ details > summary::after {
 details[open] > summary::after {
     content: '-';
 }
+
+details {
+    transition: height 1s ease;
+    overflow: hidden;
+}
+
+details:not([open])
+{
+    height: 2.25em;
+}
+
+details[open]
+{
+    height: 6.50em;
+}
+
+details[open] > summary ~ * {
+    animation: sweep 2s ease-in-out;
+}
+  
+@keyframes sweep {
+    0%    {opacity: 0; margin-left: -10px}
+    100%  {opacity: 1; margin-left: 0px}
+}
