@@ -9,7 +9,12 @@
                             <details>
                                 <summary>{loanItem.typeName}</summary>
                                 <ul>
-                                    <li>testing now</li>
+                                    <li class="slds-var-m-top_small slds-var-m-left_small">
+                                        {loanItem.description}
+                                        <div if:true={loanItem.pic}>
+                                            <img class="loanTypeImg" src={loanItem.pic}>
+                                        </div>
+                                    </li>
                                 </ul>
                             </details>
                         </li>
