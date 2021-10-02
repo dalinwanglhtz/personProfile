@@ -1,0 +1,13 @@
+<template>
+    <details>
+        <summary>{typeName}</summary>
+        <ul>
+            <li class="slds-var-m-top_small slds-var-m-left_small">
+                {description}
+                <div if:true={pic}>
+                    <img class="loanTypeImg" src={pic}>
+                </div>
+            </li>
+        </ul>
+    </details>
+</template>

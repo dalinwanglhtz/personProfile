@@ -7,7 +7,7 @@ export default class PersonProfileServices extends LightningElement {
         {
             Id: 1,
             typeName: 'First Home Buyer',
-            description: 'Looking to buy your first home? It is important to get your finance sorted to start with. It could be intimidating for someone who never purchased a property before. That’s ok, you’re in good hands with Maggie. She’ll take you through steps you need to secure your finance for your dream home.',
+            description: 'Looking to buy your first home? It is important to get your finance sorted as step one. It could be intimidating for someone who have never bought a property before. That’s ok, you’re in good hands with Maggie. She’ll take you through steps needed to secure your finance for your dream home.',
             pic: PersonProfileResources + '/loantypes/first-time-buyer.jpeg'
         },
         {

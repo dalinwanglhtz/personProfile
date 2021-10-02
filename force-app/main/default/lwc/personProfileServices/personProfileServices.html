@@ -6,17 +6,11 @@
                 <ul class="slds-has-dividers_around-space">
                     <template for:each={loanTypes} for:item="loanItem">
                         <li class="slds-item content" key={loanItem.Id}>
-                            <details>
-                                <summary>{loanItem.typeName}</summary>
-                                <ul>
-                                    <li class="slds-var-m-top_small slds-var-m-left_small">
-                                        {loanItem.description}
-                                        <div if:true={loanItem.pic}>
-                                            <img class="loanTypeImg" src={loanItem.pic}>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </details>
+                            <c-person-profile-loan-type
+                                type-name={loanItem.typeName}
+                                description={loanItem.description}
+                                pic={loanItem.pic}
+                            ></c-person-profile-loan-type>
                         </li>
                     </template>
                 </ul>
