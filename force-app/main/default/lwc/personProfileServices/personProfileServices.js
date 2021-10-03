@@ -12,15 +12,21 @@ export default class PersonProfileServices extends LightningElement {
         },
         {
             Id: 2,
-            typeName: 'Refinancing Home Loans'
+            typeName: 'Refinancing Home Loans',
+            description: 'You may have seen this phrase many times but wonder what they mean. Refinancing is an effective financial instrument that helps keep your existing loans up to date with the latest changes in rates and your serviceability so that you are able to benefit from lower rates and / or less bank charges. It’s often a good idea to have a qualified mortgage broker to review your loans every now and then or when necessary in order to maximize return and save on your repayments. Talk to Maggie if you would like to learn more.',
+            pic: PersonProfileResources + '/loantypes/refinance.jpg'
         },
         {
             Id: 3,
-            typeName: 'Investment Loans'
+            typeName: 'Investment Loans',
+            description: 'From time to time you may be thinking about buying an additional property for investment. With no cash in hand how would you achieve that goal? Not to worry, as an experienced broker, Maggie will be able to help you take out an investment loan to fund your purchase.',
+            pic: PersonProfileResources + '/loantypes/investment-loan.jpg'
         },
         {
             Id: 4,
-            typeName: 'Equipment Finance'
+            typeName: 'Equipment Finance',
+            description: 'For anyone running a business involving production of physical goods or providing services, they more or less need to use equipment to perform those jobs. Sometimes these equipment are large and costly to purchase. And with limited cash in hand, their business will eventually come into a grinding halt. Equipment finance is here to the rescue. It’s a type of loan to fund your purchase of these machinery and tools so your business can operate. Maggie is an experienced lending expert who can help you simplify the process of equipment financing. Please reach out for a catch-up with her to learn more.',
+            pic: PersonProfileResources + '/loantypes/equipment-finance.png'
         },
         {
             Id: 5,
