@@ -25,7 +25,7 @@ export default class PersonProfileServices extends LightningElement {
         {
             Id: 4,
             typeName: 'Equipment Finance',
-            description: 'For anyone running a business involving production of physical goods or providing services, they more or less need to use equipment to perform those jobs. Sometimes these equipment are large and costly to purchase. And with limited cash in hand, their business will eventually come into a grinding halt. Equipment finance is here to the rescue. It’s a type of loan to fund your purchase of these machinery and tools so your business can operate. Maggie is an experienced lending expert who can help you simplify the process of equipment financing. Please reach out for a catch-up with her to learn more.',
+            description: 'For anyone running a business involving production of physical goods or providing services, they more or less rely on the use equipment to perform those jobs. Sometimes these equipment are large and costly to purchase. And with limited cash in hand, their business will eventually come into a grinding halt. Equipment finance is here to the rescue. It’s a type of loan to fund your purchase of these machinery and tools so your business can operate. Maggie is an experienced lending expert who can help you simplify the process of equipment financing. Please reach out for a catch-up with her to learn more.',
             pic: PersonProfileResources + '/loantypes/equipment-finance.png'
         },
         {
