@@ -30,7 +30,9 @@ export default class PersonProfileServices extends LightningElement {
         },
         {
             Id: 5,
-            typeName: 'Small to Medium (SME) Business Loans'
+            typeName: 'Small to Medium (SME) Business Loans',
+            description: 'So you’ve decided to start a new business? Great initiative! Or you’ve already started your business and it’s growing fast? That’s awesome. Either way you may realize you now need more cash to fund a big initiative that’ll take your company to the next level. A trusted and reliable lending specialist is all you need to make this happen. Maggie is just the right person to help you achieve this.',
+            pic: PersonProfileResources + '/loantypes/sme-business-loan.jpg'
         },
         {
             Id: 6,
